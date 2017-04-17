@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/6.0.0/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="icon" href="logo.ico">
+  <link rel="stylesheet" href="index.css">
+  <title>Registro | Ordenes de Compra</title>
+</head>
+<body class="container">
+  <header class="row-header">
+    <div class="col-header">
+      <h2>Registro de Ordenes de Compra&nbsp<img class="header-logo" src="logo.png" alt=""></h2>
+    </div>
+  </header>
+
+  <main class="row-main">
+    <section class="main-content">
+      <div class="main-header">
+        <h4>Captura tu orden aqui</h4>
+        <p id="succes"></p>
+      </div>
+      <form action="" method="GET">
+        <div>
+          <label for="nombre_producto"><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbspNombre del producto</label>
+          <input type="text" name="nombre_producto" value="" id="name_product">
+          <p id="alert1"></p>
+        </div>
+        <div>
+          <label for="cantidades"><i class="fa fa-sort" aria-hidden="true"></i>&nbspCantidades</label>
+          <select class="" name="cantidades" id="cantidad" >
+            <option value="">-----</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="">10+</option>
+          </select>
+          <p id="alert2"></p>
+        </div>
+        <div>
+          <label for="precio"><i class="fa fa-usd" aria-hidden="true"></i>&nbspPrecio</label>
+          <input type="number" name="precio" value="" class="price" id="precio" >
+          <p id="alert3"></p>
+        </div>
+        <div>
+          <label for="descripcion"><i class="fa fa-text-width" aria-hidden="true"></i>&nbspDescripcion</label>
+          <textarea name="descripcion" rows="4" cols="30" id="descripcion"></textarea>
+          <p id="alert4"></p>
+        </div>
+        <div>
+          <label for="nombre_comprador"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbspNombre del comprador</label>
+          <input type="text" name="nombre_comprador" value=""  id="nombre_comprador">
+          <p id="alert5"></p>
+        </div>
+        <div>
+          <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i>&nbspEmail</label>
+          <input type="email" name="email" value=""  id="email">
+          <p id="alert6"></p>
+        </div>
+        <div class="btn">
+          <button type="submit" name="button">Guardar orden</button>
+          <a href="">Lista de ordenes</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="js/validaciones.js">
+
+  </script>
+</body>
+</html>
