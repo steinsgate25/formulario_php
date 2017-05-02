@@ -1,9 +1,9 @@
 <?php
 	//Código  PHP
-	require 'conexion/conexion.php';
+	require 'conexion.php';
 
 	$nombre_producto = $_POST['nombre_producto'];
-	
+
 	$cantidades = $_POST['cantidades'];
 
 	$precio = $_POST['precio'];
@@ -21,13 +21,13 @@
 	$precio,$descripcion,$nombre_comprador,$email);
 
 	echo "<h2>Se guardo el registro correctamente</h2>";
-	echo "<a href='index.php'>Captura un nuevo Registro</a>";
+	echo "<a href='index.html'>Captura un nuevo Registro</a>";
 
 	function guardarproducto($nombre_producto,$cantidades,
 	$precio,$descripcion,$nombre_comprador,$email)
 	{
 		$link = conexion();
-		$query ="insert into formulario (nombre_producto,cantidades,precio,
+		$query ="insert into tab_ordencompra (nombre_producto,cantidades,precio,
 			descripcion,nombre_comprador,email)
 
 			values ('$nombre_producto','$cantidades',

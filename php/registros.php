@@ -4,7 +4,7 @@
 </head>
 <<body>
 	<?php
-	require 'conexion/conexion.php';
+	require 'conexion.php';
 
 	$consulta = mysqli_query($conexion,"SELECT * from formulario")
 	or die ("Error al traer los datos")

@@ -2,7 +2,7 @@
 
 	function conexion()
 	{
-		$link=mysqli_connect('localhost','root','','formulario');
+		$link=mysqli_connect('localhost','root','','base_ordencompra');
 		return $link;
 	}
 
